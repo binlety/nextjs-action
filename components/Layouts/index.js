@@ -3,7 +3,7 @@ import SecurityLayout from './SecurityLayout';
 import UserLayout from './UserLayout';
 import BlankLayout from './BlankLayout';
 
-const Layout = ({ type = '1', children }) => {
+export default function Layout({ type = '1', children }){
    if(type == 1){
      return (
       <SecurityLayout>
@@ -16,5 +16,3 @@ const Layout = ({ type = '1', children }) => {
     return <BlankLayout>{children}</BlankLayout>
    }
 }
-
-export default Layout

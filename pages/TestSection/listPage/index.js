@@ -1,7 +1,8 @@
 import { getSortedPostsData } from '@/utils/test.js'
 import cn from 'classnames'
+import styles from './index.module.css'
 
-function About({allPostsData}) {
+function About({ allPostsData , type = 'success' }) {
   return (
    <>
     <ul >
