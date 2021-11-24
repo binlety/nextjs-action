@@ -1,0 +1,21 @@
+.moduleCss{
+  font-size:42px;
+  color:#f90;
+}
+
+
+.otherCss{
+  background-color: aqua;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.test {
+  color: red;
+}

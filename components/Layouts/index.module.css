@@ -1,0 +1,25 @@
+.wrap {
+  background: #F5F9FF;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  min-width: 1024px;
+}
+
+.aside  {
+  width: 140px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 8px 0 rgba(29,35,41,.05);
+  position: relative;
+  z-index: 1000;
+}
+
+.section {
+  display: flex;
+  background: #F5F9FF;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+}
