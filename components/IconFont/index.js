@@ -2,7 +2,7 @@ import { createIconFont } from '@rsuite/icons';
 
 const IconFont = createIconFont({
   // Icon resource: https://www.iconfont.cn/
-  scriptUrl: '//at.alicdn.com/t/font_1833074_qxtt8navv5d.js',
+  scriptUrl: '//at.alicdn.com/t/font_2963116_0zih2jd26k7.js',
   // commonProps: { style: { fontSize: 30, color: '#1675e0' } },
   // onLoaded: () => {
   //   console.log('onLoaded');
