@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Layout from "@/components/Layouts/index";
+import Layout from "/components/Layouts/index";
 import { Button, IconButton, ButtonGroup, ButtonToolbar } from 'rsuite';
 
 export default function LayoutTest(){
