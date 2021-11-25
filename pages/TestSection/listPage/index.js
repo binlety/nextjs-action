@@ -1,4 +1,4 @@
-import { getSortedPostsData } from '@/utils/test.js'
+import { getSortedPostsData } from '/utils/test.js'
 import cn from 'classnames'
 import styles from './index.module.css'
 
