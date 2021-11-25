@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@rsuite/icons": "^1.0.2",
+    "babel-plugin-module-resolver": "^4.1.0",
     "classnames": "^2.3.1",
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
@@ -19,7 +20,6 @@
     "rsuite": "^4.10.2"
   },
   "devDependencies": {
-    "babel-plugin-module-resolver": "^4.1.0",
     "css-loader": "^6.2.0",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
