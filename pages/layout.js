@@ -11,7 +11,7 @@ export default function LayoutTest(){
     // .then(res=>console.log(res,'fetch'))
     // .catch(err=>console.log(err,'err'))
 
-    // axios.get('/blade-user/is-zjf').then(res=>console.log(res))
+    axios.get('/blade-user/is-zjf').then(res=>console.log(res))
   },[])
 
   return (
