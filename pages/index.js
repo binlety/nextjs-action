@@ -5,7 +5,7 @@ import { Button } from 'rsuite';
 import styles from './index.module.css'
 import "./index.less"
 
-const App = ({ category = [] }) => {
+function App({ category = [] }){
   return (
     <div className={styles.container}>
     
