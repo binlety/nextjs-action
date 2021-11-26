@@ -7,7 +7,7 @@
     "dev:test2": "cross-env NODE_ENV=test2 node server.js",
     "dev:test3": "cross-env NODE_ENV=test3 node server.js",
     "dev:stage": "cross-env NODE_ENV=stage node server.js",
-    "build": "next build",
+    "build": "cross-env NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint"
   },
