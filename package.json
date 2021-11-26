@@ -1,18 +1,25 @@
 {
-  "name": "next-app",
+  "name": "front-active-web",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "cross-env NODE_ENV=test2 node server.js",
+    "dev:test1": "cross-env NODE_ENV=test1 node server.js",
+    "dev:test2": "cross-env NODE_ENV=test2 node server.js",
+    "dev:test3": "cross-env NODE_ENV=test3 node server.js",
+    "dev:stage": "cross-env NODE_ENV=stage node server.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@rsuite/icons": "^1.0.2",
+    "axios": "^0.24.0",
     "classnames": "^2.3.1",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
     "http-proxy-middleware": "^2.0.1",
+    "js-base64": "^3.7.2",
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

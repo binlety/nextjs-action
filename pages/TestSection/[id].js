@@ -1,4 +1,4 @@
-import { getAllPostIds, getPostData } from '/utils/test'
+import { getAllPostIds, getPostData } from '@/utils/test'
 
 
 export default function Post({ postData }) {
