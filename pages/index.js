@@ -23,7 +23,7 @@ const App = ({ category = [] }) => {
       <ul>
         {
           category.map(item=>{
-            return <li key={item.id}><Link href='TestSection/detailPage/[id]' as={`TestSection/detailPage/${item.id}`}>{item.name}</Link></li>
+            return <li key={item.id}><Link href='/TestSection/detailPage/[id]' as={`/TestSection/detailPage/${item.id}`}>{item.name}</Link></li>
           })
         }
       </ul>

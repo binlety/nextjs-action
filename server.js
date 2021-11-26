@@ -1,6 +1,13 @@
 const express = require('express')
 const next = require('next')
 const { createProxyMiddleware } = require('http-proxy-middleware')
+
+const { PORT, NODE_ENV } = process.env
+const port = parseInt(PORT, 10) || 3000
+const dev = NODE_ENV !== 'production'
+const app = next({ dev })
+const handle = app.getRequestHandler()
+
 const devProxy = {
   '/api': {
     target: 'https://blade-gateway.zhaojiafang.com/blade-auth/oauth/token', //java: 环境，端口自己配置合适的
@@ -8,6 +15,20 @@ const devProxy = {
       '^/api': '/'
     },
     changeOrigin: true
+  },
+  '/blade': {
+    target: `http://blade-gateway.${dev ? NODE_ENV+ '.' : ''}zhaojiafang.com`, 
+    changeOrigin: true,
+    pathRewrite: {
+      '': '',
+    },
+  },
+  '/zjf': {
+    target: `http://blade-gateway.${dev ? NODE_ENV+ '.' : ''}zhaojiafang.com`,
+    changeOrigin: true,
+    pathRewrite: {
+      '': '',
+    },
   },
   '/php': {
     target: 'http://localhost:8000', //php: 环境，端口自己配置合适的
@@ -17,10 +38,7 @@ const devProxy = {
     changeOrigin: true
   },
 }
-const port = parseInt(process.env.PORT, 10) || 3000
-const dev = process.env.NODE_ENV !== 'production'
-const app = next({ dev })
-const handle = app.getRequestHandler()
+
 app.prepare()
   .then(() => {
     const server = express()

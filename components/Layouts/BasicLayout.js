@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         <Footer>Footer</Footer>
       </Container>
       <IconFont style={{ color:"red", marginRight: 10, fontSize: '2em' }} type='icon-shangcheng'/>
-      <Message duration={1000}>Informational</Message>
+      <Message duration={1000} closable>Informational</Message>
       <Avatar circle src="https://avatars2.githubusercontent.com/u/12592949?s=460&v=4" />
    </div>
 
